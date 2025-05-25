@@ -8,6 +8,26 @@
     {
       "source": "/shop",
       "destination": "https://cstaller.myshopify.com/"
+    },
+    {
+      "source": "/products/(.*)",
+      "destination": "https://cstaller.myshopify.com/products/$1"
+    },
+    {
+      "source": "/collections/(.*)",
+      "destination": "https://cstaller.myshopify.com/collections/$1"
+    },
+    {
+      "source": "/cart",
+      "destination": "https://cstaller.myshopify.com/cart"
+    },
+    {
+      "source": "/account/(.*)",
+      "destination": "https://cstaller.myshopify.com/account/$1"
+    },
+    {
+      "source": "/search",
+      "destination": "https://cstaller.myshopify.com/search"
     }
   ]
 }
