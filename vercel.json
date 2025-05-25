@@ -28,6 +28,14 @@
     {
       "source": "/search",
       "destination": "https://cstaller.myshopify.com/search"
+    },
+    {
+      "source": "/policies/(.*)",
+      "destination": "https://cstaller.myshopify.com/policies/$1"
+    },
+    {
+      "source": "/pages/(.*)",
+      "destination": "https://cstaller.myshopify.com/pages/$1"
     }
   ]
 }
