@@ -2,13 +2,17 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/shop/:path*",
-      "destination": "https://cstaller.myshopify.com/:path*"
+      "source": "/shop",
+      "destination": "https://cstaller.myshopify.com/"
+    },
+    {
+      "source": "/shop/(.*)",
+      "destination": "https://cstaller.myshopify.com/$1"
     }
   ],
   "headers": [
     {
-      "source": "/shop/:path*",
+      "source": "/shop/(.*)",
       "headers": [
         {
           "key": "X-Frame-Options",
