@@ -2,27 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/shop",
-      "destination": "https://cstaller.myshopify.com/"
-    },
-    {
       "source": "/shop/(.*)",
       "destination": "https://cstaller.myshopify.com/$1"
-    }
-  ],
-  "headers": [
+    },
     {
-      "source": "/shop/(.*)",
-      "headers": [
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
-      ]
+      "source": "/shop",
+      "destination": "https://cstaller.myshopify.com/"
     }
   ]
 }
