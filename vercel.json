@@ -57,6 +57,11 @@
       "source": "/wallets/(.*)",
       "destination": "https://cstaller.myshopify.com/wallets/$1",
       "permanent": false
+    },
+    {
+      "source": "/services/(.*)",
+      "destination": "https://cstaller.myshopify.com/services/$1",
+      "permanent": false
     }
   ]
 }
