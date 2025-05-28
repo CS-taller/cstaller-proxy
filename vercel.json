@@ -62,6 +62,16 @@
       "source": "/services/(.*)",
       "destination": "https://cstaller.myshopify.com/services/$1",
       "permanent": false
+    },
+    {
+      "source": "/payment/(.*)",
+      "destination": "https://cstaller.myshopify.com/payment/$1",
+      "permanent": false
+    },
+    {
+      "source": "/pay/(.*)",
+      "destination": "https://cstaller.myshopify.com/pay/$1",
+      "permanent": false
     }
   ]
 }
