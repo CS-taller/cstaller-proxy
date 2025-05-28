@@ -22,6 +22,10 @@
       "destination": "https://cstaller.myshopify.com/cart"
     },
     {
+      "source": "/cart/(.*)",
+      "destination": "https://cstaller.myshopify.com/cart/$1"
+    },
+    {
       "source": "/account/(.*)",
       "destination": "https://cstaller.myshopify.com/account/$1"
     },
