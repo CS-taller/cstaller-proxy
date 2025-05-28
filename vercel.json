@@ -37,5 +37,17 @@
       "source": "/pages/(.*)",
       "destination": "https://cstaller.myshopify.com/pages/$1"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/checkout",
+      "destination": "https://cstaller.myshopify.com/checkout",
+      "permanent": false
+    },
+    {
+      "source": "/checkout/(.*)",
+      "destination": "https://cstaller.myshopify.com/checkout/$1",
+      "permanent": false
+    }
   ]
 }
