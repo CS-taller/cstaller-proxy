@@ -2,44 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/shop/(.*)",
+      "source": "/(.*)",
       "destination": "https://cstaller.myshopify.com/$1"
-    },
-    {
-      "source": "/shop",
-      "destination": "https://cstaller.myshopify.com/"
-    },
-    {
-      "source": "/products/(.*)",
-      "destination": "https://cstaller.myshopify.com/products/$1"
-    },
-    {
-      "source": "/collections/(.*)",
-      "destination": "https://cstaller.myshopify.com/collections/$1"
-    },
-    {
-      "source": "/cart",
-      "destination": "https://cstaller.myshopify.com/cart"
-    },
-    {
-      "source": "/cart/(.*)",
-      "destination": "https://cstaller.myshopify.com/cart/$1"
-    },
-    {
-      "source": "/account/(.*)",
-      "destination": "https://cstaller.myshopify.com/account/$1"
-    },
-    {
-      "source": "/search",
-      "destination": "https://cstaller.myshopify.com/search"
-    },
-    {
-      "source": "/policies/(.*)",
-      "destination": "https://cstaller.myshopify.com/policies/$1"
-    },
-    {
-      "source": "/pages/(.*)",
-      "destination": "https://cstaller.myshopify.com/pages/$1"
     }
   ],
   "redirects": [
@@ -51,26 +15,6 @@
     {
       "source": "/checkout/(.*)",
       "destination": "https://cstaller.myshopify.com/checkout/$1",
-      "permanent": false
-    },
-    {
-      "source": "/wallets/(.*)",
-      "destination": "https://cstaller.myshopify.com/wallets/$1",
-      "permanent": false
-    },
-    {
-      "source": "/services/(.*)",
-      "destination": "https://cstaller.myshopify.com/services/$1",
-      "permanent": false
-    },
-    {
-      "source": "/payment/(.*)",
-      "destination": "https://cstaller.myshopify.com/payment/$1",
-      "permanent": false
-    },
-    {
-      "source": "/pay/(.*)",
-      "destination": "https://cstaller.myshopify.com/pay/$1",
       "permanent": false
     }
   ]
